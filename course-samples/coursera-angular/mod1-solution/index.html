@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+
+    <script src="app.js"></script>
     <title>Lunch Checker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -8,8 +11,8 @@
       .message { font-size: 1.3em; font-weight: bold; }
     </style>
   </head>
-<body>
-   <div class="container">
+<body ng-app="LunchCheck">
+   <div class="container" ng-controller='LunchCheckController'>
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
@@ -24,6 +27,6 @@
            <!-- Your message can go here. -->
          </div>
    </div>
-
+<script src="angular.min.js"></script>
 </body>
 </html>
